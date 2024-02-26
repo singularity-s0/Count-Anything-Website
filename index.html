@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 100px auto;
+        padding: 50px;
+        text-align: justify;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Anything</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.webp" alt="Logo">
+        <h1>Count Anything</h1>
+    </header>
+
+    <main>
+        <p>A zero-shot object counter app. Currently only a demo of the technology.</p>
+        <br>
+        <p>
+            <strong>Architecture</strong><br>
+            A ViT encoder followed by a convolutional decoder. The resulting number is the sum over decoder output.
+            Image resolution is 384 x 384.
+        </p>
+        <br>
+        <p>
+            <strong>Note</strong><br>
+            This app only provide a rough estimation of the object count. Estimations may be inaccurate or incorrect. Do
+            not rely on the results.
+            <br>
+            Please submit issues or feature requests <a
+                href="https://github.com/singularity-s0/Count-Anything-Website/issues">here</a>.
+        </p>
+        <br>
+        <p>
+            <strong>Privacy Policy</strong><br>
+            We do not collect any personal information. Your data is processed locally on your device.
+        </p>
+    </main>
+
+    <footer>
+        <p>© 2024 <a href="https://github.com/singularity-s0">singularity-s0</a></p>
+    </footer>
+</body>
+
+</html>
